@@ -1,0 +1,26 @@
+/*2017-1-6 tjk*/
+/*loading dialog和toast相关的东西*/
+
+.weui_dialog.weui_dialog_visible,
+.weui_toast.weui_dialog_visible,
+.weui_dialog.weui_toast_visible,
+.weui_toast.weui_toast_visible {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.weui_dialog,
+.weui_toast {
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    visibility: hidden;
+    margin: 0;
+    /*left: 7.5%;*/
+    /*top: 30%;*/
+    z-index: 100;
+}
